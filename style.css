@@ -13,7 +13,6 @@ nav {
     align-items: center;
 }
 
-
 .logodiv {
     padding: 0;
 }
@@ -38,11 +37,9 @@ ul {
     line-height: 32px;
     padding: 0;
     font-size: 13px;
-    
 }
 
 ul li {
-    
     background-color: #f99dd5;
     border: 2px solid #f99dd5;
     height: 35px;
@@ -50,7 +47,7 @@ ul li {
     text-align: center;
     padding: 0px 8px 0px 8px;
     /* margin: 0px 5px 0px 5px; */
-    width : auto;
+    width: auto;
     font-weight: 700;
 }
 
@@ -62,17 +59,13 @@ ul li a:hover {
     font-weight: 900;
     text-decoration: underline;
     color: #f20b97;
-    
 }
 
 ul li a:active {
     font-weight: 900;
     text-decoration: none;
     color: #D90987;
-    
- 
 }
-
 
 .fa-list-ul {
     display: none;
@@ -86,10 +79,69 @@ ul li a:active {
     display: none;
 } */
 
-@media only screen and (max-width:767px) {
- 
-    ul {
+/* Footer Start */
 
+div.footer {
+    background-color: #a6a6a6;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    color: #e6e6e6;
+    height: 300px;
+    margin: 0;
+}
+
+div.upper {
+    display: flex;
+    z-index: 10;
+}
+
+div.social {
+    display: flex;
+}
+
+div.products_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 80px;
+}
+
+h3.product, p.product_footer {
+    width: 70px;
+    margin: 5px 30px;
+}
+
+h3.product:hover, p.product_footer:hover {
+    color: #ffffff;
+    cursor: pointer;
+    border-bottom: #fff solid 2px;
+}
+
+p.code {
+    float: right;
+    font-size: 20px;
+    color: #d9d9d9;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+}
+
+div.lower {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+/* Footer Finish */
+
+@media only screen and (max-width:767px) {
+    ul {
+        z-index: 10;
         position: fixed;
         top: 90px;
         left: -100%;
@@ -97,10 +149,8 @@ ul li a:active {
         display: block;
         margin-top: 20px;
         margin-bottom: 25px;
-        
-        
         /* overflow-x: hidden; */
-        background-image: linear-gradient(0deg, #f7d6e0 ,#ea94ae);
+        background-image: linear-gradient(0deg, #f7d6e0, #ea94ae);
         /* background-color: #f7d6e0; */
         width: 100%;
         padding-right: 25px;
@@ -116,11 +166,9 @@ ul li a:active {
         border-radius: 0;
         border-bottom: 1px solid #888888;
         width: 100%;
-       height: 70px;
+        height: 70px;
         background-color: transparent;
     }
-
-    
     nav .logo {
         height: 70px;
         max-width: 270px;
@@ -146,8 +194,7 @@ ul li a:active {
         justify-content: space-between;
         width: 100vw;
     }
-    #check:checked ~ ul{
-        
+    #check:checked~ul {
         left: 0%;
-      }
+    }
 }
